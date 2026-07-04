@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TongYI | นักพัฒนาเว็บไซต์</title>
+<meta name="description" content="TongYI - นักพัฒนาเว็บไซต์ที่เน้นการสร้างประสบการณ์ดิจิทัลที่สวยงามและใช้งานง่าย">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <div class="brand">
+      <span class="brand-text">TongYI<span class="accent">TH</span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <button class="nav-link" data-target="home">หน้าแรก</button>
+      <button class="nav-link" data-target="about">เกี่ยวกับ</button>
+      <button class="nav-link" data-target="service">บริการ</button>
+      <button class="nav-link" data-target="project">ผลงาน</button>
+      <button class="nav-link" data-target="skill">ทักษะ</button>
+      <a class="nav-link" href="shop.html">ร้านค้า</a>
+      <button class="nav-link" data-target="contact">ติดต่อ</button>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="nav-link" data-target="home">หน้าแรก</button>
+    <button class="nav-link" data-target="about">เกี่ยวกับ</button>
+    <button class="nav-link" data-target="service">บริการ</button>
+    <button class="nav-link" data-target="project">ผลงาน</button>
+    <button class="nav-link" data-target="skill">ทักษะ</button>
+    <a class="nav-link" href="shop.html">ร้านค้า</a>
+    <button class="nav-link" data-target="contact">ติดต่อ</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow fade-up">ยินดีต้อนรับ</p>
+        <h1 class="hero-title fade-up" style="animation-delay:.05s">
+          สวัสดีทุกคน<br>
+          <span class="accent">ผมคือ TongYI</span>
+        </h1>
+        <p class="hero-bio fade-up" style="animation-delay:.1s">
+          ผมเป็นนักพัฒนาเว็บไซต์ที่เชี่ยวชาญด้าน HTML, CSS และ JavaScript
+          สร้างสรรค์ประสบการณ์ดิจิทัลที่ตอบสนองได้ดี สะอาดตา และใช้งานง่าย
+        </p>
+
+        <div class="stats-grid fade-up" style="animation-delay:.2s">
+          <div class="stat-card">
+            <p class="stat-number">1+</p>
+            <p class="stat-label">โปรเจกต์ที่เสร็จสมบูรณ์</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">2+</p>
+            <p class="stat-label">ปีประสบการณ์</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number">1+</p>
+            <p class="stat-label">ลูกค้าที่พึงพอใจ</p>
+          </div>
+        </div>
+
+        <div class="hero-cta fade-up" style="animation-delay:.3s">
+          <button class="btn btn-primary" data-target="contact">
+            จ้างงานผม
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <button class="btn btn-outline">ดาวน์โหลด CV</button>
+        </div>
+
+        <div class="social-icons fade-up" style="animation-delay:.4s">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.28 9.28 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7c-.24-.9-.94-1.6-1.84-1.84C18.24 5 12 5 12 5s-6.24 0-7.76.46c-.9.24-1.6.94-1.84 1.84C2 8.8 2 12 2 12s0 3.2.4 4.7c.24.9.94 1.6 1.84 1.84C5.76 19 12 19 12 19s6.24 0 7.76-.46c.9-.24 1.6-.94 1.84-1.84C22 15.2 22 12 22 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l5 3-5 3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="TikTok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M14 3v10.5a2.5 2.5 0 1 1-2-2.45V9a4.5 4.5 0 1 0 4 4.47V8.3a6 6 0 0 0 4 1.5V7.8a4 4 0 0 1-4-4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="media-frame">
+          <div class="media-glow"></div>
+          <video class="hero-video" src="videos/TongYI-hero.mp4" autoplay loop muted playsinline></video>
+          <div class="badge badge-top">ตอบสนองได้ดี</div>
+          <div class="badge badge-bottom">โค้ดสะอาด</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="about-media">
+        <div class="media-frame">
+          <div class="media-glow"></div>
+          <video class="hero-video" src="videos/TongYI-hero.mp4" autoplay loop muted playsinline></video>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2 class="section-title">เกี่ยวกับ<span class="accent">ผม</span></h2>
+        <p class="section-text">
+          ผมเป็นนักพัฒนาเว็บไซต์ที่หลงใหลในการสร้างประสบการณ์ดิจิทัลที่สวยงาม ใช้งานได้จริง
+          และเน้นผู้ใช้เป็นศูนย์กลาง แนวทางการทำงานของผมผสมผสานหลักการเขียนโค้ดที่สะอาด
+          เข้ากับหลักการออกแบบสมัยใหม่ เพื่อส่งมอบผลงานที่ทั้งสวยงามและมีประสิทธิภาพสูง
+        </p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <div>
+              <p class="info-label">ที่อยู่ของผม</p>
+              <p class="info-value">กรุงเทพมหานคร</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.8 2.1z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <div>
+              <p class="info-label">เบอร์โทรของผม</p>
+              <p class="info-value">+66</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline">ดาวน์โหลด CV</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="service" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title center">บริการ<span class="accent">ของผม</span></h2>
+        <p class="section-subtitle">ผมมีบริการหลากหลายที่จะช่วยให้คุณบรรลุเป้าหมายด้านดิจิทัล</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="8 6 2 12 8 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3 class="service-title">พัฒนาเว็บไซต์</h3>
+          <p class="service-desc">สร้างเว็บแอปพลิเคชันที่ตอบสนองได้ดีและมีประสิทธิภาพ ด้วยเทคโนโลยีที่ทันสมัย</p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Deployment</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-up" style="animation-delay:.1s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-1.1.9-2 2-2h2.3A2.2 2.2 0 0 0 19.5 13c0-6.1-4.9-11-11.5-11z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 class="service-title">ออกแบบ UI/UX</h3>
+          <p class="service-desc">สร้างสรรค์อินเทอร์เฟซที่สวยงามและใช้งานง่ายเพื่อยกระดับประสบการณ์ผู้ใช้</p>
+          <div class="tags">
+            <span class="tag">Figma</span><span class="tag">Canva</span><span class="tag">WordPress Elementor</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-up" style="animation-delay:.2s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 1 1-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 1 1 5.4-5.4z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 class="service-title">ซัพพอร์ตไอทีและฮาร์ดแวร์</h3>
+          <p class="service-desc">ให้บริการซัพพอร์ตด้านเทคนิคและโซลูชันฮาร์ดแวร์สำหรับธุรกิจของคุณ</p>
+          <div class="tags">
+            <span class="tag">ซ่อมแซม</span><span class="tag">อัปเกรด</span><span class="tag">บำรุงรักษา</span>
+          </div>
+        </div>
+
+        <div class="service-card fade-up" style="animation-delay:.3s">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l8 3.5v6c0 4.7-3.2 8.6-8 10.5-4.8-1.9-8-5.8-8-10.5v-6L12 2z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 class="service-title">ความปลอดภัยไซเบอร์</h3>
+          <p class="service-desc">ปกป้องทรัพย์สินดิจิทัลของคุณด้วยโซลูชันความปลอดภัยที่ครอบคลุม</p>
+          <div class="tags">
+            <span class="tag">ความปลอดภัย</span><span class="tag">การป้องกัน</span><span class="tag">การมอนิเตอร์</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title center">ผลงาน<span class="accent">ล่าสุด</span></h2>
+        <p class="section-subtitle">นี่คือบางส่วนของผลงานล่าสุดที่แสดงให้เห็นถึงทักษะและความเชี่ยวชาญของผม</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <p class="loading-text">กำลังโหลดผลงาน...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skill" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title center">ทักษะ<span class="accent">ของผม</span></h2>
+        <p class="section-subtitle">เทคโนโลยีและเครื่องมือที่ผมมีความเชี่ยวชาญ</p>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title center">ติดต่อ<span class="accent">ผม</span></h2>
+        <p class="section-subtitle">มีโปรเจกต์ในใจใช่ไหม? มาร่วมงานกันและสร้างสรรค์สิ่งที่น่าทึ่งไปด้วยกัน</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div>
+            <h3 class="contact-heading">ติดต่อ<span class="accent">ผม</span></h3>
+            <p class="section-text">
+              สามารถติดต่อผมผ่านช่องทางเหล่านี้ได้เลยครับ ยินดีพูดคุยเรื่องโปรเจกต์และโอกาสใหม่ๆ เสมอ
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="https://wa.me/6281228231309" class="contact-link-card" target="_blank" rel="noopener">
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.5 8.5 0 0 1-4-1L3 20l1.2-4.9A8.4 8.4 0 1 1 21 11.5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <div>
+                <p class="info-label">WhatsApp ของผม</p>
+                <p class="info-value">+66</p>
+              </div>
+            </a>
+
+            <a href="https://maps.google.com/?q=Jawa+Tengah,+Jepara" class="contact-link-card" target="_blank" rel="noopener">
+              <span class="info-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <div>
+                <p class="info-label">ที่อยู่ของผม</p>
+                <p class="info-value">กรุงเทพมหานคร</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 class="contact-heading">ส่ง<span class="accent">อีเมล</span></h3>
+
+          <form id="contactForm" novalidate>
+            <div class="form-field">
+              <label for="name">ชื่อของคุณ</label>
+              <input type="text" id="name" name="name" placeholder="สมชาย ใจดี" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">อีเมลของคุณ</label>
+              <input type="email" id="email" name="email" placeholder="somchai@example.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">ข้อความ</label>
+              <textarea id="message" name="message" rows="5" placeholder="สวัสดีครับ อยากคุยเรื่อง..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">ส่งข้อความ</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem;">
+          <span class="brand-text">TongYI<span class="accent">TH</span></span>
+        </div>
+        <p class="footer-text">นักพัฒนาเว็บไซต์ที่มุ่งเน้นสร้างประสบการณ์ดิจิทัลที่สวยงามและใช้งานได้จริง</p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">ลิงก์ด่วน</h4>
+        <ul class="footer-links">
+          <li><a href="#home" class="footer-link" data-target="home">หน้าแรก</a></li>
+          <li><a href="#about" class="footer-link" data-target="about">เกี่ยวกับ</a></li>
+          <li><a href="#service" class="footer-link" data-target="service">บริการ</a></li>
+          <li><a href="#project" class="footer-link" data-target="project">ผลงาน</a></li>
+          <li><a href="#skill" class="footer-link" data-target="skill">ทักษะ</a></li>
+          <li><a href="shop.html" class="footer-link">ร้านค้า</a></li>
+          <li><a href="#contact" class="footer-link" data-target="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">ติดตามผม</h4>
+        <div class="social-icons">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.28 9.28 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7c-.24-.9-.94-1.6-1.84-1.84C18.24 5 12 5 12 5s-6.24 0-7.76.46c-.9.24-1.6.94-1.84 1.84C2 8.8 2 12 2 12s0 3.2.4 4.7c.24.9.94 1.6 1.84 1.84C5.76 19 12 19 12 19s6.24 0 7.76-.46c.9-.24 1.6-.94 1.84-1.84C22 15.2 22 12 22 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l5 3-5 3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="TikTok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M14 3v10.5a2.5 2.5 0 1 1-2-2.45V9a4.5 4.5 0 1 0 4 4.47V8.3a6 6 0 0 0 4 1.5V7.8a4 4 0 0 1-4-4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-text">&copy; 2026 TongYI สงวนลิขสิทธิ์ทุกประการ</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link">นโยบายความเป็นส่วนตัว</a>
+        <a href="#" class="footer-link">เงื่อนไขการให้บริการ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
