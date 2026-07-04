@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แผงควบคุมแอดมิน | TongYI</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<!-- Login Screen -->
+<div id="loginScreen" class="login-screen">
+  <form id="loginForm" class="login-card">
+    <h1 class="login-title">TongYI<span class="accent">.</span> Admin</h1>
+    <p class="login-subtitle">เข้าสู่ระบบเพื่อจัดการเนื้อหาเว็บไซต์</p>
+
+    <div class="form-field">
+      <label for="username">ชื่อผู้ใช้</label>
+      <input type="text" id="username" name="username" required autocomplete="username">
+    </div>
+    <div class="form-field">
+      <label for="password">รหัสผ่าน</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password">
+    </div>
+
+    <button type="submit" class="btn btn-primary full-width">เข้าสู่ระบบ</button>
+    <p id="loginError" class="error-text"></p>
+  </form>
+</div>
+
+<!-- Dashboard -->
+<div id="dashboard" class="dashboard hidden">
+  <header class="dash-header">
+    <h1 class="dash-title">TongYI<span class="accent">.</span> Admin</h1>
+    <div class="dash-header-right">
+      <a href="/" target="_blank" class="btn btn-outline btn-sm">ดูเว็บไซต์</a>
+      <button id="logoutBtn" class="btn btn-outline btn-sm">ออกจากระบบ</button>
+    </div>
+  </header>
+
+  <nav class="dash-tabs">
+    <button class="tab-btn active" data-tab="projects">ผลงาน</button>
+    <button class="tab-btn" data-tab="skills">ทักษะ</button>
+    <button class="tab-btn" data-tab="products">ร้านค้า</button>
+    <button class="tab-btn" data-tab="messages">ข้อความติดต่อ</button>
+  </nav>
+
+  <main class="dash-main">
+
+    <!-- Projects Tab -->
+    <section id="tab-projects" class="tab-panel active">
+      <div class="panel-header">
+        <h2>จัดการผลงาน</h2>
+        <button class="btn btn-primary btn-sm" id="addProjectBtn">+ เพิ่มผลงาน</button>
+      </div>
+      <div id="projectsList" class="item-list">
+        <p class="loading-text">กำลังโหลด...</p>
+      </div>
+    </section>
+
+    <!-- Skills Tab -->
+    <section id="tab-skills" class="tab-panel">
+      <div class="panel-header">
+        <h2>จัดการทักษะ</h2>
+        <button class="btn btn-primary btn-sm" id="addSkillBtn">+ เพิ่มทักษะ</button>
+      </div>
+      <div id="skillsList" class="item-list item-list-grid">
+        <p class="loading-text">กำลังโหลด...</p>
+      </div>
+    </section>
+
+    <!-- Products Tab -->
+    <section id="tab-products" class="tab-panel">
+      <div class="panel-header">
+        <h2>จัดการร้านค้า</h2>
+        <button class="btn btn-primary btn-sm" id="addProductBtn">+ เพิ่มสินค้า</button>
+      </div>
+      <div id="productsList" class="item-list">
+        <p class="loading-text">กำลังโหลด...</p>
+      </div>
+    </section>
+
+    <!-- Messages Tab -->
+    <section id="tab-messages" class="tab-panel">
+      <div class="panel-header">
+        <h2>ข้อความจากฟอร์มติดต่อ</h2>
+      </div>
+      <div id="messagesList" class="item-list">
+        <p class="loading-text">กำลังโหลด...</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Project Modal -->
+<div id="projectModal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="projectModalTitle">เพิ่มผลงาน</h3>
+    <form id="projectForm">
+      <input type="hidden" id="projectId">
+      <div class="form-field">
+        <label for="projectTitle">ชื่อผลงาน</label>
+        <input type="text" id="projectTitle" required>
+      </div>
+      <div class="form-field">
+        <label for="projectDesc">คำอธิบาย</label>
+        <textarea id="projectDesc" rows="3" required></textarea>
+      </div>
+      <div class="form-field">
+        <label for="projectImage">ลิงก์รูปภาพ (URL)</label>
+        <input type="text" id="projectImage" placeholder="https://...">
+      </div>
+      <div class="form-field">
+        <label for="projectTags">แท็ก (คั่นด้วยจุลภาค)</label>
+        <input type="text" id="projectTags" placeholder="React, JavaScript, CSS">
+      </div>
+      <div class="form-field">
+        <label for="projectLink">ลิงก์ผลงาน</label>
+        <input type="text" id="projectLink" placeholder="https://...">
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" id="cancelProjectBtn">ยกเลิก</button>
+        <button type="submit" class="btn btn-primary">บันทึก</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Skill Modal -->
+<div id="skillModal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="skillModalTitle">เพิ่มทักษะ</h3>
+    <form id="skillForm">
+      <input type="hidden" id="skillId">
+      <div class="form-field">
+        <label for="skillName">ชื่อทักษะ</label>
+        <input type="text" id="skillName" required>
+      </div>
+      <div class="form-field">
+        <label for="skillCategory">หมวดหมู่</label>
+        <input type="text" id="skillCategory" placeholder="Frontend, Backend, เครื่องมือ ฯลฯ">
+      </div>
+      <div class="form-field">
+        <label for="skillIcon">ไอคอน</label>
+        <select id="skillIcon">
+          <option value="code">code</option>
+          <option value="palette">palette</option>
+          <option value="zap">zap</option>
+          <option value="database">database</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" id="cancelSkillBtn">ยกเลิก</button>
+        <button type="submit" class="btn btn-primary">บันทึก</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Product Modal -->
+<div id="productModal" class="modal hidden">
+  <div class="modal-box">
+    <h3 id="productModalTitle">เพิ่มสินค้า</h3>
+    <form id="productForm">
+      <input type="hidden" id="productId">
+      <div class="form-field">
+        <label for="productTitle">ชื่อสินค้า</label>
+        <input type="text" id="productTitle" required>
+      </div>
+      <div class="form-field">
+        <label for="productDesc">คำอธิบาย</label>
+        <textarea id="productDesc" rows="3" required></textarea>
+      </div>
+      <div class="form-field">
+        <label for="productImage">ลิงก์รูปภาพ (URL)</label>
+        <input type="text" id="productImage" placeholder="https://...">
+      </div>
+      <div class="form-field">
+        <label for="productPrice">ราคา (บาท)</label>
+        <input type="number" id="productPrice" min="0" step="0.01" placeholder="0.00">
+      </div>
+      <div class="form-field">
+        <label for="productDownloadLink">ลิงก์ดาวน์โหลด</label>
+        <input type="text" id="productDownloadLink" placeholder="https://...">
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-outline" id="cancelProductBtn">ยกเลิก</button>
+        <button type="submit" class="btn btn-primary">บันทึก</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

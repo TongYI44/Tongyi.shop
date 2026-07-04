@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ร้านค้า | TongYI</title>
+<meta name="description" content="ร้านค้าของ TongYI - ไฟล์ทั้งหมดโหลดได้ฟรี ดาวน์โหลดไปใช้ได้เลย">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-text">TongYI<span class="accent">TH</span></span>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html#home">หน้าแรก</a>
+      <a class="nav-link" href="index.html#about">เกี่ยวกับ</a>
+      <a class="nav-link" href="index.html#service">บริการ</a>
+      <a class="nav-link" href="index.html#project">ผลงาน</a>
+      <a class="nav-link" href="index.html#skill">ทักษะ</a>
+      <a class="nav-link active" href="shop.html">ร้านค้า</a>
+      <a class="nav-link" href="index.html#contact">ติดต่อ</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="nav-link" href="index.html#home">หน้าแรก</a>
+    <a class="nav-link" href="index.html#about">เกี่ยวกับ</a>
+    <a class="nav-link" href="index.html#service">บริการ</a>
+    <a class="nav-link" href="index.html#project">ผลงาน</a>
+    <a class="nav-link" href="index.html#skill">ทักษะ</a>
+    <a class="nav-link active" href="shop.html">ร้านค้า</a>
+    <a class="nav-link" href="index.html#contact">ติดต่อ</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- Shop Hero -->
+  <section class="hero shop-hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow fade-up">ยินดีตอนรับ</p>
+        <h1 class="hero-title fade-up" style="animation-delay:.05s">
+          ไฟล์ทั้งหมดโหลดได้ฟรี<br>
+          <span class="accent">พร้อมใช้งาน</span>
+        </h1>
+        <p class="hero-bio fade-up" style="animation-delay:.1s">
+          SRC ทั้งหมดโหลดได้เลย/SRCมีบัคทุกตัวไม่ต้องถามว่ามีไหม ดาวน์โหลดไปใช้งานได้ทันที
+        </p>
+      </div>
+
+      <div class="hero-media">
+        <div class="media-frame">
+          <div class="media-glow"></div>
+          <video class="hero-video" src="videos/shop-hero.mp4" autoplay loop muted playsinline></video>
+          <div class="badge badge-top">พร้อมดาวน์โหลด</div>
+          <div class="badge badge-bottom">ไฟล์คุณภาพ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <p class="loading-text">กำลังโหลดสินค้า...</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:1rem;">
+          <span class="brand-text">TongYI<span class="accent">TH</span></span>
+        </a>
+        <p class="footer-text">นักพัฒนาเว็บไซต์ที่มุ่งเน้นสร้างประสบการณ์ดิจิทัลที่สวยงามและใช้งานได้จริง</p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">ลิงก์ด่วน</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#home" class="footer-link">หน้าแรก</a></li>
+          <li><a href="index.html#about" class="footer-link">เกี่ยวกับ</a></li>
+          <li><a href="index.html#service" class="footer-link">บริการ</a></li>
+          <li><a href="index.html#project" class="footer-link">ผลงาน</a></li>
+          <li><a href="index.html#skill" class="footer-link">ทักษะ</a></li>
+          <li><a href="shop.html" class="footer-link">ร้านค้า</a></li>
+          <li><a href="index.html#contact" class="footer-link">ติดต่อ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">ติดตามผม</h4>
+        <div class="social-icons">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05a9.28 9.28 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22 12s0-3.2-.4-4.7c-.24-.9-.94-1.6-1.84-1.84C18.24 5 12 5 12 5s-6.24 0-7.76.46c-.9.24-1.6.94-1.84 1.84C2 8.8 2 12 2 12s0 3.2.4 4.7c.24.9.94 1.6 1.84 1.84C5.76 19 12 19 12 19s6.24 0 7.76-.46c.9-.24 1.6-.94 1.84-1.84C22 15.2 22 12 22 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l5 3-5 3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="TikTok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M14 3v10.5a2.5 2.5 0 1 1-2-2.45V9a4.5 4.5 0 1 0 4 4.47V8.3a6 6 0 0 0 4 1.5V7.8a4 4 0 0 1-4-4.8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-text">&copy; 2026 TongYI สงวนลิขสิทธิ์ทุกประการ</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link">นโยบายความเป็นส่วนตัว</a>
+        <a href="#" class="footer-link">เงื่อนไขการให้บริการ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/shop.js"></script>
+</body>
+</html>
